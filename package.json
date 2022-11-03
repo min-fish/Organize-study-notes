@@ -1,0 +1,17 @@
+{
+  "name": "organize-study-notes",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vuepress dev docs",
+    "build": "vuepress build docs",
+    "publish": "deploy.sh"
+  },
+  "repository": "github:min-fish/organize-study-notes",
+  "author": "min-fish",
+  "license": "ISC",
+  "dependencies": {
+    "vuepress": "^1.9.7"
+  }
+}
