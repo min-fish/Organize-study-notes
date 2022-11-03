@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .box {
+      /* 
+        定位用
+        content: '';
+        position: absolute;
+
+        就不需要  
+        width: 0;
+        height: 0;
+      */
+      width: 0;
+      height: 0;
+      border: 50px solid transparent;
+      /* 正 */
+      border-bottom-color: skyblue; 
+      /* 倒 */
+      border-top-color: yellow; 
+      /* 左边 */
+      border-left-color: red; 
+      /* 右边 */
+      border-right-color: green;
+    }
+
+    .secondly {
+      width: 0;
+      height: 0;
+      border-top: 50px solid skyblue;
+      border-right: 50px solid transparent;
+    }
+
+    .next {
+      width: 0;
+      height: 0;
+      border-top: 50px solid skyblue;
+      border-left: 50px solid transparent;
+    }
+
+    .bottomLeft {
+      width: 0;
+      height: 0;
+      border-bottom: 50px solid skyblue;
+      border-right: 50px solid transparent;
+    }
+
+    .bottomRight {
+      width: 0;
+      height: 0;
+      border-bottom: 50px solid skyblue;
+      border-left: 50px solid transparent;
+    }
+  </style>
+</head>
+<body>
+  <div>四方</div>
+  <div class="box"></div>
+  <div>左上</div>
+  <div class="secondly"></div>
+  <div>右上</div>
+  <div class="next"></div>
+  <div>左下</div>
+  <div class="bottomLeft"></div>
+  <div>右下</div>
+  <div class="bottomRight"></div>
+</body>
+</html>
