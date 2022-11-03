@@ -35,7 +35,6 @@ module.exports = {
 						'/web/CSS/6',
 						'/web/CSS/7',
 						'/web/CSS/8',
-						
 					]
 				},
 				{
