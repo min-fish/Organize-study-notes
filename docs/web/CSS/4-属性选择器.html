@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>属性选择器</title>
+  <style>
+    /* 匹配 div标签 后面的 p标签 */
+    div~p {
+      color: skyblue;
+    }
+
+    /* 匹配 class 以test 开头的类名 */
+    div[class^="test"] {
+      color: red;
+    }
+
+    /* 匹配 class 以test 结尾的类名 */
+    div[class$="test"] {
+      color: green;
+    }
+
+    /* 匹配 class 包含 test 的类名 */
+    div[class*="box"] {
+      color: pink;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <div class="testXXX">诗与远方</div>
+    <div class="XXXtest">生活与学习</div>
+    <div class="box">短暂与灿烂</div>
+  </div>
+  <p>娶到心爱的姑娘，就像打了胜仗一样</p>
+</body>
+</html>
