@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+</body>
+</html>
+
+<script>
+  let objData = {
+    oneSheep: 1,
+    twoSheep: 2,
+    threeSheep: 3,
+  }
+  
+  function changeData(value) {
+    console.log('初始值',value)
+    let name = undefined
+    let newObj = {}
+    for(let i in value) {
+      // 根据i 组合成新的一个 key
+      name = i.substring(0,1).toUpperCase() + i.substring(1,i.length)
+      // 添加新对象
+      newObj[name] = value[i]
+    }
+    console.log('最后值',newObj)
+    return newObj
+  }
+
+  changeData(objData)
+</script>
